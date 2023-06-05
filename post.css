@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #f5f5f5;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    font-weight: bold;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    min-width: 800px;
+    overflow-x: auto;
+    overflow-y: auto;
+    background-image: url('.resources/background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    flex-grow: 1;
+}
+
+main h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.post {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 100%;
+}
+
+.post-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.post-content {
+    margin-bottom: 10px;
+}
+
+
+.comments {
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.comment {
+    background-color:  rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.comment h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.buttons {
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .likeBtn, .dislikeBtn {
+    background-color: transparent;
+    color:white;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .likeBtn {
+    margin-right: 1rem;
+  }
+  .likeBtn.active, .dislikeBtn.active {
+    background-color:white;
+    color: red;
+  }
+  
+
+.replies {
+    margin-left: 20px;
+}
+
+.reply {
+    background-color:  rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.reply h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.reply-actions {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.reply-actions button {
+    background-color: transparent;
+    border: none;
+    color: #f5f5f5;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+.reply-actions button:hover {
+    color: #ccc;
+}
+
+footer {
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+  }
+
+.post-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    height: 50px;
+    margin-right: 1rem;
+    object-fit: cover;
+    width: 50px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.reply-form {
+    margin-top: 1rem;
+}
+
+.reply-form-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 255, 255,0.2);
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+.reply-form textarea {
+    color : black;
+    display: block;
+    margin-bottom: 1rem;
+    width: 100%;
+    resize: vertical;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.reply-form button {
+    background-color: transparent;
+    border: 1px solid #f5f5f5;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.reply-form button:hover {
+    background-color: #f5f5f5;
+    color: #121212;
+}
+
+.user-link {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.user-link:hover {
+    color: #ccc;
+}
